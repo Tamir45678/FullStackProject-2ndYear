@@ -1,0 +1,585 @@
+﻿body {
+	font-size:18px;
+	color: white;
+	margin: 0px;
+	height:100%;
+	background: rgba(0, 0, 0, 0.9);
+	background-size:cover;
+	background-repeat:no-repeat
+}
+
+i {
+	cursor: pointer;
+	padding: 0px 2px;
+	font-size:30px;
+}
+
+button:focus, li:focus {
+	outline: none;
+}
+
+
+div {
+	text-align: center;
+}
+
+
+div > img {
+	height: 100%;
+	width: 100%;
+}
+
+
+#getTV{
+	background: none;
+	border: none;
+	color: deepskyblue;
+	font-size: 25px;
+	
+}
+
+#getTV:hover{
+	font-size:30px;
+
+}
+
+
+#mainDiv {
+	display: grid;
+	width: 100%;
+	max-width: 100%;
+	grid-template-columns: auto 1fr auto;
+	min-height:90vh
+}
+
+#fanClub {
+	grid-column: 1/2;
+	width: auto;
+	background: rgba(0, 0, 0, 0.4);
+	height: 90vh;
+	color: white;
+	font-weight: bold;
+}
+
+#center {
+	grid-column: 2/3
+}
+
+#userProfilePh {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	float: left;
+	margin: 10px;
+}
+
+.joinChatBtn {
+	width: auto;
+	height: fit-content;
+	margin: 0px 10px;
+	padding: 5px;
+	border-radius: 50px;
+	background-color:deepskyblue;
+	font-weight:bold;
+}
+
+#chatList p {
+	margin: 5px auto;
+	width: inherit;
+	color:white;
+}
+
+#chatList li {
+	grid-template-columns: 1fr auto;
+	display: grid;
+	border-top: 2px solid white;
+	padding: 5px;
+	list-style-type: none;
+	padding-top: 15px;
+}
+
+
+.leftScrollBtn, .rightScrollBtn {
+	border: none;
+	background: transparent;
+	color:deepskyblue;
+	font-size: 35px;
+}
+
+
+
+/*
+ can make class for things that get bigger on hover*/
+	.leftscrollbtn:hover, .rightscrollbtn:hover {
+		font-size: larger;
+	}
+
+
+
+
+/* Resigtration */
+.red-star {
+	font-size: 25px;
+	color: darkred;
+}
+
+
+#welcomeDiv {
+	color: white;
+	text-align: left;
+	padding-left: 10px;
+	font-size: 20px;
+	margin-top: 15px
+}
+
+
+
+button, input[type=submit] {
+	border: 2px solid black;
+	font-size: 18px;
+	margin: 15px auto;
+	border-radius: 20px;
+}
+
+.menuBtn {
+	width: 100%;
+	font-weight: bold;
+	background: transparent;
+	border: none;
+	margin-top: 15px;
+	text-align: left;
+	font-size: 22px;
+	color: white;
+}
+
+
+
+
+#ph > img {
+	padding: 10px
+}
+
+#tvShowName, #tvShows {
+
+	width: 200px;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 0px 5px;
+}
+
+#tvShowName {
+	width: 70%;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 0px 5px;
+}
+
+
+	.form-group > label {
+		float: left;
+		text-align: left;
+		margin-right: 10px;
+		margin-left: 10%;
+	}
+
+	.form-group > input {
+		width: 50%;
+		border-radius: 15px;
+		padding: 5px;
+		font-size: 16px;
+		float: right;
+		margin-right: 10%;
+	}
+
+
+		.form-group > input[type=radio] {
+			width: auto
+		}
+
+
+
+/*Modal CSS*/
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 10% auto; /* 10% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 40%; /* Could be more or less, depending on screen size */
+	border-radius: 15px;
+	color: white;
+	background-color: black;
+	opacity: 0.9;
+}
+
+
+/* The Close Button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+	.close:hover,
+	.close:focus {
+		color: black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+
+/* nav-bar */
+.nav {
+	margin-top: 0px;
+	display: grid;
+	grid-template-columns: 20% 25% auto 10%;
+	min-height: 10vh;
+	background-color: black;
+	align-items: center;
+	background: #202020;
+	border-bottom: 2px solid white;
+}
+
+
+	.nav > button {
+		font-size: 15px;
+	}
+
+
+.logo {
+	font-size: 28px;
+	border-right: 2px solid white;
+	cursor: pointer;
+	color: deepskyblue;
+	font-weight: bold;
+}
+	.logo > i {
+		margin: 10px;
+	}
+
+
+.hrefbtn {
+	text-decoration: underline;
+	cursor: pointer;
+	color: deepskyblue;
+}
+
+
+
+/* Cards */
+.card {
+	color: black;
+	cursor: pointer;
+}
+
+
+
+
+.cardsOL {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	max-width: 90%;
+	display: inline-flex;
+	flex-direction: row;
+	padding: 0px;
+	list-style-type: none;
+	margin: 30px 0;
+}
+
+.cardsOL > .card {
+	min-width: 20%;
+	margin: 10px 3px;
+	position: relative;
+	max-width:300px;
+}
+
+
+.cardsOL .card:hover::after {
+	background-color: black;
+	opacity: 0.5;
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	visibility: visible;
+	z-index: 2;
+}
+
+.card:hover .goToPage {
+	visibility: visible;
+}
+
+.card:hover {
+	z-index: 1;
+	margin: 0px;
+}
+
+.card:hover img {height:100%}
+
+
+#recommendMovieList > li,#recommendations > li {
+	min-width: 33%;
+	max-width:50%;
+
+}
+
+.goToPage {
+	width: 100%;
+	visibility: hidden;
+	margin: 0px auto;
+	color: white;
+	position: absolute;
+	height: 100%;
+	z-index: 3;
+	margin-top: 0px
+}
+
+.card-body {
+	position: absolute;
+	width: 100%;
+	bottom: 5px;
+	padding: 0px
+}
+
+.actorCard > .card-body {
+	bottom: auto;
+	position: inherit;
+}
+
+.center {
+	grid-column:2/3
+}
+
+
+.cardsOL::-webkit-scrollbar {
+	display: none;
+}
+
+
+
+/*menuCSS*/
+
+#menuContent {
+	display: none;
+	background: rgba(0, 0, 0, 0.4);
+	grid-column: 3/4;
+	height: 90vh;
+	max-width: 10vw;
+}
+
+ol {
+	padding: 5px;
+}
+
+#center {
+	grid-column: 2/3;
+	padding: 0px;
+	grid-row: 1/2;
+	margin-top:30px;
+}
+
+#menuContent ul {
+	display: block;
+	height: 100%;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px
+}
+
+#menuContent li {
+	width: 100%;
+}
+
+#openMenuBtn {
+	border: none;
+	font-size: 35px;
+	margin: 0 30px;
+	background-color: transparent;
+	color:white;
+}
+
+.menuBtn>i {
+	margin-right: 10px;
+}
+
+
+/* News */
+#fanClub, #menuContent {
+	height: 100%
+}
+
+.newDiv {
+	width: 100%;
+	padding: 15px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	padding: 20px;
+}
+.newImg > img {
+	border-radius: 25px;
+	box-shadow: black 0px 0px 18px 8px;
+	margin: 0 auto;
+}
+
+.newDescription {
+	margin: 0 auto;
+	grid-column: 2/3;
+	padding:20px;
+	text-align:left;
+}
+
+#showNews > hr {
+	margin: 1rem auto;
+	width: 10%;
+	color: black;
+	border: none;
+	background-color: black;
+	height: 1px
+}
+
+.showNews h5{
+	text-align:left
+}
+
+
+
+/* search and view pages*/
+
+.result {
+	border: 1px solid white;
+	height: auto;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+.resultText {
+	z-index: 2;
+	width: 100%;
+	transition: .2s ease-out;
+	margin: 0px auto;
+}
+
+	.resultText:hover {
+		box-shadow: inset 0px 0px 13px 16px white;
+		transform: translate3d(0,-2px,0);
+		padding: 20px;
+	}
+
+
+.result {
+/*	width: 80%;
+	height: 50px;
+	border: 1px solid white;*/
+	float: left;
+	text-align: left;
+	position: relative
+}
+
+	.result::after {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: black;
+		opacity: 0.7;
+		content: ""
+	}
+
+	.result > div {
+		min-height:300px;
+		padding:10px
+	}
+
+
+#results, #favoritesMovies, #seriesEpisodes {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	max-height: 85vh;
+	display: inline-flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+
+.autoOption{
+	border-bottom:2px solid black;
+
+}
+
+
+.autoOption > div {
+	display:grid;
+	grid-template-columns: auto 1fr 15%;
+	font-size:medium
+}
+
+.typeP {
+	background-color: black;
+	color: white;
+	padding: 5px 10px;
+	height:fit-content;
+	margin: 10px auto;
+	text-transform: uppercase;
+}
+
+.nameP {
+	margin: 10px auto;
+	text-transform: uppercase;
+	font-weight:bold;
+}
+
+ul.ui-autocomplete{
+	overflow-y:auto;
+	max-height:50%;
+}
+
+
+
+.linkIcons, .linkIcons:hover {
+	font-size: 25px;
+	background: black;
+	margin: 10px;
+	border-radius: 50px;
+	padding: 5px;
+	color: deepskyblue;
+}
+
+
+/*Loader*/
+.no-js #loader {
+	display: none;
+}
+
+.js #loader {
+	display: block;
+	position: absolute;
+	left: 100px;
+	top: 0;
+}
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-image: url('../Images/niceLoading.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: black;
+}

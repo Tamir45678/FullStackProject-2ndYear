@@ -1,0 +1,97 @@
+﻿﻿.episode {
+	width: 80%;
+	height: 50px;
+	border: 1px solid white;
+	float: left;
+	text-align: left;
+	position: relative
+}
+
+
+.episode > div {
+	height: 100%;
+}
+
+div > img {
+	height: 100%;
+	width: 100%;
+}
+
+.chapterImg {
+	height: 300px;
+	margin:20px auto;
+}
+
+.info {
+	z-index: 2;
+	width: 100%;
+	margin: 30px auto;
+}
+
+.episodeCard {
+	border: 1px solid white;
+	height: auto;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+#episodesList { 
+	max-height:80vh;
+	overflow-y:scroll
+}
+
+/*heart*/
+
+.heart > i {
+	font-size:25px;
+}
+
+.heart {
+	background-color: transparent;
+	color: white;
+	border: none;
+}
+
+	.heart:hover {
+		color: red;
+		animation: beat .2s infinite alternate;
+		transform-origin: center;
+		border: none;
+		background-color: transparent;
+	}
+
+		.heart:hover > i {
+			animation: pulse 2s;
+		}
+
+/* Heart beat animation*/
+@keyframes beat {
+	to {
+		transform: scale(1.4);
+	}
+}
+
+.red-heart, .red-heart:hover {
+	background-color: transparent;
+	color: red;
+	font-size: 30px;
+	border: none;
+}
+
+
+
+@keyframes pulse {
+	0% {
+		color: white;
+	}
+
+	100% {
+		color: #FF4136;
+	}
+}
+
+
+#seasonDetails{
+	margin: 20px auto;
+}

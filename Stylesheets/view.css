@@ -1,0 +1,47 @@
+.chapterImg {
+	border-radius: 20px;
+}
+
+.episodeCard p {
+	text-align: left;
+}
+
+.episodeCard > div {
+	float: left;
+	height: 100%;
+	margin: 15px;
+}
+
+.episodeCard {
+	width: 100%;
+	height: auto;
+	flex-direction: row;
+	background-color: transparent;
+}
+
+.info {
+	width: 70%;
+}
+
+
+
+.episode:hover {
+	box-shadow: none;
+	transform: none;
+	padding: 10px;
+}
+
+
+
+
+
+.cardsOL .chosen {
+	height: 110%;
+	width: 110%;
+	margin: auto 0px;
+
+}
+
+#tvName {
+	margin-bottom:15px
+}

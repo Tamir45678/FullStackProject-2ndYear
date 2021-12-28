@@ -1,0 +1,40 @@
+﻿body {
+	font-size: 22px;
+}
+
+hr {
+	border-top: 2px solid white;
+	margin: 30px;
+}
+
+
+#leftDiv {
+	background-color: #282323;
+	padding: 0px;
+}
+
+	#leftDiv > div {
+		margin-bottom: 25px
+	}
+
+#actorImg > img {
+	height: auto;
+	width: 100%;
+	padding: 0px;
+}
+
+#actorInfo {
+	position: relative;
+	margin: auto;
+	height: 100%;
+}
+
+#infoContainer{
+	margin: 30px auto;
+}
+
+
+#leftDetails {
+	text-align: left;
+	padding-left: 10px
+}

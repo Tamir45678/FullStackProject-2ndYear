@@ -1,0 +1,191 @@
+﻿#ph > img {
+	height: auto;
+	width: 100%;
+	padding: 0px;
+}
+
+
+#watchTrailerBtn,#movieLikeBtn {
+	font-size:50px;
+	background:transparent;
+	border:none;
+	color:white;
+}
+
+
+/*
+.cardsOL > .card {
+	height: 200px;
+}*/
+
+
+
+#actors p {
+	font-size: 15px
+}
+
+#recommendations {
+	height: 100%
+}
+
+
+
+
+
+.card-body {
+	padding: 0px;
+}
+
+.card {
+	margin: 5px;
+}
+
+#head {
+	position: relative;
+	height:100%;
+}
+
+#headerBackground {
+	opacity: 0.6;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: -webkit-fill-available;
+}
+
+
+#headerInfo::before {
+	content: "";
+	height: fit-content;
+	background-color: black;
+	opacity: 0.2;
+	position: absolute;
+	width: 100%
+}
+
+#headerInfo {
+	position: relative;
+	margin: auto;
+	height:100%
+}
+
+#details {
+	margin-top: 30px;
+	padding:0px;
+}
+
+
+#ph > img {
+	height: auto;
+	width: 100%;
+	padding:0px;
+
+}
+#trailerModal > .modal-content {
+	height: 50%;
+	width: 50%;
+	border: none;
+	border-radius: 0px;
+	opacity: 1;
+}
+
+
+#seriesDiv {
+	width: 100%;
+	margin: 0px;
+	max-width: 100vw;
+	padding: 0px;
+	grid-column: 2/3;
+}
+
+body {
+	height: 100vh;
+	margin: 0
+}
+
+
+.tablink {
+	background-color: #555;
+	background-image: -webkit-linear-gradient(283deg, rgba(255, 255, 255, 0.1) 50%, transparent 55%),-webkit-linear-gradient(top, rgba(255, 255, 255, 0.15), transparent);
+	box-shadow: 0 0 0 1px #163772 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset;
+	display: block;
+	color: black;
+	border-radius: 0px;
+	border: none;
+	outline: none;
+	font-size: 22px;
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+	-webkit-transition: all .2s linear;
+	cursor: pointer;
+	padding: 14px 16px;
+	margin:0px;
+	width: 100%;
+}
+	.tablink:active {
+		background-color: #474EDD;
+		top: 2px;
+		box-shadow: 0 0 0 1px #163772 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 0 0 0 #333797,0 0 0 1px rgba(0, 0, 0, 0.4),0 0px 8px 1px rgba(0, 0, 0, 0.5);
+	}
+
+	.tablink:hover {
+		background-color: #777;
+	}
+
+.tabcontent {
+	display: none;
+	height: 100%;
+	background: linear-gradient( 45deg,black,#00bfff00,black);
+}
+
+#optionsDiv {
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+height:fit-content;
+	bottom: 0px;
+}
+
+
+
+
+#leftDiv {
+	background-color: #282323;
+	padding: 0px;
+}
+
+	#leftDiv > div {
+		margin-bottom: 25px
+	}
+
+#genresDiv > .genre {
+	background: deepskyblue;
+	color: black;
+	font-weight: 700;
+	width: fit-content;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	margin: 10px auto;
+	margin: 10px;
+	display: inline-flex;
+}
+
+#genresDiv {
+	padding:10px
+}
+
+#detailsInner {
+	padding: 50px;
+
+}
+
+body {
+	font-size: 22px;
+}
+
+#leftDetails {
+	text-align:left;
+	padding-left:10px
+}

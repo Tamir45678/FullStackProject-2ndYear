@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+    </script>
+    <script src="../Scripts/ajaxCalls.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDX02F5Z4U83fevL63h0sIKVde5iqwDmr4"></script>
+    <script src="../Scripts/pagesScripts/register.js"></script>
+    <link href="../Stylesheets/StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../Stylesheets/jquery.notifyBar.css">
+    <script src="../Scripts/pagesScripts/alerts.js"></script>
+    <script src="../Scripts/jquery.notifyBar.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("../Images/Presentation11.png")
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><i class="fa fa-film"></i>The movie DB </div>
+        <button id="registerBtn"><i class="fa fa-user-plus"></i>Register</button>
+        <button id="loginBtn"><i class="fa fa-sign-in"></i>Login</button>
+    </div>
+
+        <!--<div class="header">
+            <h1> The Movie DB</h1>
+            <div id="buttons">
+                <button id="registerBtn">Register</button>
+                <button id="loginBtn">Login</button>
+                <button class="heart"> <i class="fa fa-heart"></i></button>
+            </div>
+        </div>-->
+        <!--<hr />-->
+
+        <div id="registerModal" class="modal">
+            <form id="registerForm" class="modal-content">
+                <h2>Sign Up</h2>
+                <div class="form-group">
+                    <label for="firstNameTB"><span class="red-star">★ </span>First name</label>
+                    <input type="text" class="form-control" id="firstNameTB" placeholder="Enter your first name" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastNameTB"><span class="red-star">★ </span> Last name</label>
+                    <input type="text" class="form-control" id="lastNameTB" placeholder="Enter the last name" required>
+                </div>
+                <div class="form-group">
+                    <label for="mailTB"><span class="red-star">★ </span>Mail</label>
+                    <input type="email" class="form-control" id="mailTB" placeholder="Enter the mail" required />
+                </div>
+                <div class="form-group">
+                    <label for="passwordTB"><span class="red-star">★ </span> Password</label>
+                    <input type="password" class="form-control" id="passwordTB" placeholder="At least one upper case and one number" pattern="(?=.*[A-Z])(?=.*[0-9]).{6,}" required oninvalid="this.setCustomValidity('Password should contain at least one upper case letter and on digit. length of minimum 6')"
+                           oninput="this.setCustomValidity('')" />
+                </div>
+                <div class="form-group">
+                    <label for="phoneTB"><span class="red-star">★ </span>Phone number</label>
+                    <input type="tel" class="form-control" id="phoneTB" placeholder="0dd-ddddddd" pattern="0[0-9]{2}-[0-9]{7}" oninvalid="this.setCustomValidity('Format should be 0dd-ddddddd')"
+                           oninput="this.setCustomValidity('')" required />
+                </div>
+                <div class="form-group">
+                    <label for="gender"><span class="red-star">★ </span> Gender: </label>
+                    Male <input type="radio" class="form-control" name="gender" value="M" required />
+                    Female<input type="radio" class="form-control" name="gender" value="F" />
+                </div>
+                <div class="form-group">
+                    <label for="birthYear"><span class="red-star">★ </span> Birth year </label>
+                    <input type="number" class="form-control" id="birthYearTB" placeholder="Select year" min="1900" max="2021" required />
+                </div>
+                <div class="form-group">
+                    <label for="styleTB"> Style </label>
+                    <input type="text" class="form-control" id="styleTB" placeholder="Enter preferred style" />
+                </div>
+                <div class="form-group">
+                    <label for="addressTB">  <span class="red-star">★ </span> Address</label>
+                    <input type="text" class="form-control" id="addressTB" placeholder="Enter address" />
+
+                </div>
+                <input type="submit" value="Register" />
+                <hr />
+                <div>
+                    <p>Already a member? <a class="hrefbtn" onclick="toggleModal()">Sign in</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div id="loginModal" class="modal" style="display:block">
+            <form id="loginForm" class="modal-content">
+                <h2>Sign In</h2>
+                <div class="form-group">
+                    <label for="mailTB">Mail</label>
+                    <input type="email" class="form-control" id="loginMail" placeholder="Enter the mail" required />
+                </div>
+                <div class="form-group">
+                    <label for="passwordTB"> Password</label>
+                    <input type="password" class="form-control" id="loginPassword" placeholder="Enter password" required />
+                </div>
+
+                <input type="submit" value="Login" />
+                <hr />
+                <div>
+                    <p>Not a member yet? <a class="hrefbtn" onclick="toggleModal()">Sign up</a></p>
+                </div>
+            </form>
+        </div>
+
+</body>
+</html>
